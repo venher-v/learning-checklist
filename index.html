@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чекліст для зображень на лендінгу</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        strong {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Чекліст для зображень на лендінгу (2025)</h1>
+    <ul>
+        <li><strong>Іконки</strong> — тільки SVG (оптимізувати через <a href="https://jakearchibald.github.io/svgomg/" target="_blank">SVGOMG</a>)</li>
+        <li><strong>Фото, банери, фони</strong> — WebP або AVIF (оптимізувати через <a href="https://squoosh.app/" target="_blank">Squoosh</a> або <a href="https://tinypng.com/" target="_blank">TinyPNG</a>)</li>
+        <li><strong>Прозорі зображення</strong> — WebP або PNG</li>
+        <li><strong>Великі зображення</strong> — кілька версій (мобайл, планшет, десктоп) з використанням тега <code>&lt;picture&gt;</code></li>
+        <li><strong>Назви файлів</strong> — тільки англійською і без пробілів (наприклад: hero-banner.webp)</li>
+        <li><strong>Альт текст</strong> — обов'язково прописувати <code>alt</code></li>
+        <li><strong>Перевіряти розмір</strong> файлів перед завантаженням на сайт</li>
+    </ul>
+</div>
+
+</body>
+</html>
