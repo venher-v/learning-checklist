@@ -1,59 +1,98 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Чекліст для зображень на лендінгу</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            padding: 8px 0;
-            border-bottom: 1px solid #eee;
-        }
-        li:last-child {
-            border-bottom: none;
-        }
-        strong {
-            color: #007bff;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Навчальний Чекліст</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <header>
+    <h1>Навчальний Чекліст</h1>
+  </header>
 
-<div class="container">
-    <h1>Чекліст для зображень на лендінгу (2025)</h1>
-    <ul>
-        <li><strong>Іконки</strong> — тільки SVG (оптимізувати через <a href="https://jakearchibald.github.io/svgomg/" target="_blank">SVGOMG</a>)</li>
-        <li><strong>Фото, банери, фони</strong> — WebP або AVIF (оптимізувати через <a href="https://squoosh.app/" target="_blank">Squoosh</a> або <a href="https://tinypng.com/" target="_blank">TinyPNG</a>)</li>
-        <li><strong>Прозорі зображення</strong> — WebP або PNG</li>
-        <li><strong>Великі зображення</strong> — кілька версій (мобайл, планшет, десктоп) з використанням тега <code>&lt;picture&gt;</code></li>
-        <li><strong>Назви файлів</strong> — тільки англійською і без пробілів (наприклад: hero-banner.webp)</li>
-        <li><strong>Альт текст</strong> — обов'язково прописувати <code>alt</code></li>
-        <li><strong>Перевіряти розмір</strong> файлів перед завантаженням на сайт</li>
-    </ul>
-</div>
+  <main>
+    <section class="section">
+      <h2>HTML & CSS</h2>
+      <button class="toggle-btn">Згорнути/Розгорнути</button>
+      <div class="content">
+        <h3>Чекліст для зображень на лендінгу:</h3>
+        <ul>
+          <li>✅ Іконки — тільки SVG
+            <ul>
+              <li>➔ Оптимізувати через <a href="https://jakearchibald.github.io/svgomg/" target="_blank">SVGOMG</a></li>
+            </ul>
+          </li>
+          <li>✅ Фото, банери, фони — WebP (або AVIF)
+            <ul>
+              <li>➔ Оптимізувати через <a href="https://squoosh.app/" target="_blank">Squoosh</a> або <a
+                  href="https://tinypng.com/" target="_blank">TinyPNG</a></li>
+            </ul>
+          </li>
+          <li>✅ Прозорі зображення — WebP (або PNG, якщо треба ідеальна якість)</li>
+          <li>✅ Зображення великого розміру — одразу кілька версій (мобайл, планшет, десктоп)
+            <ul>
+              <li>➔ Використовувати тег <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture"
+                  target="_blank">&lt;picture&gt;</a></li>
+            </ul>
+          </li>
+          <li>✅ Назви файлів — тільки англійською і без пробілів
+            <ul>
+              <li>Наприклад: hero-banner.webp, а не банер головна.png</li>
+            </ul>
+          </li>
+          <li>✅ Альтернативний текст (alt) — обов'язково</li>
+          <li>✅ Завжди перевіряти розмір картинок перед завантаженням</li>
+        </ul>
+        <h3>Корисні посилання:</h3>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs - CSS</a></li>
+          <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+          <li><a href="https://www.freecodecamp.org/news/learn-html5-and-css3-from-scratch/" target="_blank">FreeCodeCamp
+              HTML & CSS Guide</a></li>
+        </ul>
+      </div>
+    </section>
 
+
+    <section class="section">
+      <h2>JavaScript</h2>
+      <button class="toggle-btn">Згорнути/Розгорнути</button>
+      <div class="content">
+        <h3>Корисні посилання:</h3>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs -
+              JavaScript</a></li>
+          <li><a href="https://javascript.info/" target="_blank">JavaScript.info</a></li>
+          <li><a href="https://www.freecodecamp.org/learn" target="_blank">FreeCodeCamp JavaScript Tutorials</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>React</h2>
+      <button class="toggle-btn">Згорнути/Розгорнути</button>
+      <div class="content">
+        <h3>Корисні посилання:</h3>
+        <ul>
+          <li><a href="https://reactjs.org/docs/getting-started.html" target="_blank">React Docs</a></li>
+          <li><a href="https://egghead.io/courses/the-beginner-s-guide-to-react" target="_blank">Egghead - React for
+              Beginners</a></li>
+          <li><a href="https://www.freecodecamp.org/learn/front-end-libraries/react" target="_blank">FreeCodeCamp
+              React</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ваше ім'я</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
